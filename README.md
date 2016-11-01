@@ -134,7 +134,15 @@ Analyse the performance of your solution and make an attempt to optimise the per
 
 It is acceptable to not use the regular expression (or different regular expression(s)) for this part of the task, but the output in terms of the correctness of the validation needs to match the critieria in **Part 1**. -- This part I haven't changed and kept the same validation process as in Part1. 
 
-However I have tried to implement the threadpool concept to do the parallel processing for the huge file size. But I could not test this fully due to some unavoidable situations before I submit the task. I am sorry, hope you consider this effort.
+Programs used for this part are :-
+
+  1) ImprovedBulkValidation - takes input file import_data.csv, validates the post code for each row and produces 2 different
+     o/p files for successful and failed validations as mentioned above. The files are also sorted in the ascending order 
+     of row_id column. This program also implemnts the thread pool concept for parallel processing of the input records.
+     
+  2) PostCodeVal - takes the post code and validates against the various regex patterns and returns the validation message
+
+I have tried to implement the threadpool concept to do the parallel processing for the huge file size. But I could not test this fully due to some unavoidable situations before I submit the task. I am sorry, hope you consider this effort.
 
 # Constraints / instructions
 
