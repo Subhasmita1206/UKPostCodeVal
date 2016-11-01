@@ -17,8 +17,8 @@ The prooject UKPostCodeVal has several Java programs having main[] method inside
 
 Programs used for this part are :-
 
-  1) AcceptPostCode - takes input from user from the console and passes to the validate method in the PostCodeVal class
-  2) PostCodeVal - takes the post code and validates against the various regex patterns and returns the validation message
+  1) AcceptPostCode - takes input from user from the console and passes to the validate method of PostCodeVal class          
+ 2) PostCodeVal - takes the post code and validates against the various regex patterns and returns the validation message
 
 I have added some more patterns and tried to cover almost all the post codes I found in Google inclduing the one given below. All the patterns are described in the PostCodeVal class.
 
@@ -94,12 +94,12 @@ If you need to untar the file, that is acceptable. - yes I did as I mentioned ab
 
 Programs used for this part are :-
 
-  1) BulkValidation - takes input file import_data.csv, validates the post code for each row by calling the validate method
+  1) BulkValidation - takes input file import_data.csv, validates the postcode for eachrow                                     
   2) PostCodeVal - takes the post code and validates against the various regex patterns and returns the validation message
 
 Please update the below two variables in the BulkValidation program to specify the correct folder parth for the i/p and o/p files before running the bulkvalidation process.
 
-  1) final String csvInput = "C:/Users/user/../import_data.csv";
+  1) final String csvInput = "C:/Users/user/../import_data.csv";             
   2) final String csvOutput = "C:/Users/user/../failed_validation.csv";
 
 A file named, `failed_validation.csv` with the same columns as above is produced with the failed validations.
@@ -118,12 +118,15 @@ Programs used for this part are :-
   1) BulkValidationSorted - takes input file import_data.csv, validates the post code for each row and produces 2 different
      o/p files for successful and failed validations as mentioned above. The files are also sorted in the ascending order 
      of row_id column.
+     
   2) PostCodeVal - takes the post code and validates against the various regex patterns and returns the validation message
 
 Like Part3, please update the below three variables in the BulkValidationSorted program to specify the correct folder parth for the i/p and o/p files before running the bulkvalidationSorted process.
 
   1) final String csvInput = "C:/Users/user/../import_data.csv";
+  
   2) final String csvOPass = "C:/Users/user/../succeeded_validation.csv";
+  
   3) final String csvOFail = "C:/Users/user/../failed_validation.csv";
 
 
